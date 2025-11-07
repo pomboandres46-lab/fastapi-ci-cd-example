@@ -11,3 +11,8 @@ def read_root():
 @app.get("/hello")
 def hello():
     return {"message": "Hello world"}
+
+
+@app.get("/stats")
+def stats():
+    return {"message": "Aqui veras las estadisticas"}
