@@ -23,3 +23,9 @@ def test_read_3_root():
     response = client.get("/stats")
     assert response.status_code == 200
     assert response.json() == {"message": "Aqui veras las estadisticas"}
+
+
+def test_read_4_root():
+    response = client.get("/graf")
+    assert response.status_code == 200
+    assert response.json() == {"message": "Aqui veras las graficas"}
