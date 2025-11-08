@@ -16,3 +16,8 @@ def hello():
 @app.get("/stats")
 def stats():
     return {"message": "Aqui veras las estadisticas"}
+
+
+@app.get("/graf")
+def stats():
+    return {"message": "Aqui veras las graficas"}
